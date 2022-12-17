@@ -1,0 +1,11 @@
+.col:nth-child(2n){
+    background-color: red;
+}
+
+.col:nth-child(2n+1){
+    background-color:blanchedalmond;
+}
+
+.banner{
+    height: 500px;
+}

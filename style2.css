@@ -1,0 +1,33 @@
+.estiloCor{
+    color: rgb(221, 106, 203);
+}
+
+body{
+    background-attachment: fixed;
+    background-image: url('images/circo.gif');
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.div{
+    width: 100px;
+    height: 100px;
+    background-color:orange;
+}
+#div{
+    width: 100px;
+    height: 100px;
+    background-color:blue;
+}
+#div #div2{
+    width: 100px;
+    height: 100px;
+    background-color:yellow !important;
+}
+.div2 .red{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}

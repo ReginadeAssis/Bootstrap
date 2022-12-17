@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+<link rel="stylesheet" href="style4.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>
+        Para funciconar vai no google procura e acessa o jsDelivr que é um cdm-uma coisa que você não precisa baixar. Copia esse link e cola lá no head assim como pode ver acima(é grande mesmo)-Pega a parte de script e cola dps do body. Ele é dividido em layout, conteúdo e componente.
+    </p>
+    <br>
+    <p>
+        O bootstrap tem como padrão dividir o conteúdo em uma grade.Essas colunas abaixo mostram como fica. O col é a menor unidade que tem referente a coluna(div.col*12),assim criamos uma linha com 12 colunas.
+    </p>
+<div class="row">
+<div class="col">1</div>
+<div class="col">2</div>
+<div class="col">3</div>
+<div class="col">4</div>
+<div class="col">5</div>
+<div class="col">6</div>
+<div class="col">7</div>
+<div class="col">8</div>
+<div class="col">9</div>
+<div class="col">10</div>
+<div class="col">11</div>
+<div class="col">12</div>
+</div>
+
+<p>O pseudo seletor colocado na classe da div".col:nth-child(2n){background-color: red;}" no estilo permite que eu relacione uma função(vc passa uma fórmula para que ele pinte dessacor o resultado da fórmula-aqui são os pares).
+Para cada div ocupar o tamanho inteiro até o número 4(col-12,col-6....), dps do cinco ao oito metade da tela o resto será dividido novamente. A lógica é que cada linha tem 12 espaços.Para as coisas funcionarem no bootstrap a classe é row(linha).O col ele pega os espaços e vai dividindo.
+</p>
+
+<div class="row">
+    <div class="col-12">1</div>
+    <div class="col-12">2</div>
+    <div class="col-12">3</div>
+    <div class="col-6">4</div>
+    <div class="col-6">5</div>
+    <div class="col-6">6</div>
+    <div class="col-6">7</div>
+    <div class="col-3">8</div>
+    <div class="col-3">9</div>
+    <div class="col-4">10</div>
+    <div class="col-4">11</div>
+    <div class="col-4">12</div>
+    </div>
+    <br>
+    <p>
+        O col-sm-6 diz que se tem um pouco mais de tela tds irão ocupar seis espaços.Logo, tds ocuparão a metade da tela que tem ao todo 12 espaços. Em seguida usamos o col-md-4 também buscando a lógica de controle da ocupação.Cuidado! que os estilos tem um tamanho de tela para funcionar (em caso de passar do espaço vai para outra linha).
+        O sm e vazio em geral, usado em celulares já o md até lg para tablet e xl só desktop.
+
+    </p>
+
+    <div class="row">
+        <div class="col-12 col-sm-6">1</div>
+        <div class="col-12 col-sm-6">2</div>
+        <div class="col-12 col-sm-6">3</div>
+        <div class="col-6 col-sm-6">4</div>
+        <div class="col-6 col-sm-6">5</div>
+        <div class="col-6 col-sm-6">6</div>
+        <div class="col-6 col-sm-6">7</div>
+        <div class="col-3 col-sm-6">8</div>
+        <div class="col-3 col-sm-6">9</div>
+        <div class="col-4 col-sm-6">10</div>
+        <div class="col-4 col-sm-6">11</div>
+        <div class="col-4 col-sm-6">12</div>
+        </div>
+    
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">1</div>
+            <div class="col-12 col-sm-6 col-md-4">2</div>
+            <div class="col-12 col-sm-6 col-md-4">3</div>
+            <div class="col-6 col-sm-6 col-md-4">4</div>
+            <div class="col-6 col-sm-6 col-md-4">5</div>
+            <div class="col-6 col-sm-6 col-md-4">6</div>
+            <div class="col-6 col-sm-6 col-md-4">7</div>
+            <div class="col-3 col-sm-6 col-md-4">8</div>
+            <div class="col-3 col-sm-6 col-md-4">9</div>
+            <div class="col-4 col-sm-6 col-md-4">10</div>
+            <div class="col-4 col-sm-6 col-md-4">11</div>
+            <div class="col-4 col-sm-6 col-md-4">12</div>
+            </div>
+<p>
+    Para inserir elementos como uma barra de navegação vai no site docs->componentes.Caso queira mudar a cor ou qualquer outra coisa está tudo disponível só para copiar e colar. #Tudo que vc altera é na classe inline de cada item-cada classe tem uma função/estilo/funcionalidade pré-definida é isso o que torna a ferramenta atraente.
+</p>
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-{breakpoint}">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<p>
+    Para ver espaçamento vai em documentação-utilities-padding. O espaçamento se dá em blocos no caso py-5(padding interno na vertical de 5). Já para centralizar usou d-flex. Para construir uma div com texto branco , alinhada ao centro e tamanho metade da tela a classe é div.text-white.text-center.w-50.Para ser um branco meio transparente class="text-white-50", assim vc pega 50% da cor branca.
+</p>
+<header class="bg-dark py-5 d-flex flex-column align-items-center" >
+<div class="text-dark text-center w-50"></div>
+<h1 class="text-white">Teste do texto</h1>
+<p class="text-white-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci natus, odit voluptas dolor ad hic harum architecto temporibus ab libero dignissimos aperiam fugit eum repudiandae dolorem sint non consequuntur! Temporibus.O header é o container criado, a div é o elemento dentro.</p>
+<div>
+  <button class="btn btn-secondary">Começar</button>
+  <button class="btn btn-danger">Ver mais</button>
+</div>
+
+</header>
+
+<p>
+  Trabalhando com botões...Definido através da classe .btn-Para tanto foi criada uma div(blobo) com dois botões dentro(isso tudo dentro do head).O flex column no head é para descer o botão.Quando trabalha com coluna troca o  justify-content-center por  flex-column align-items-center. 
+</p>
+
+<p>
+  As imagens são inseridas com classe .img-fluid, para modificar o container onde a imagem pode ser inserida são 3:img-rounded,img-circle e img-thumbnail.
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Duck_wings_outstretched.jpg/1200px-Duck_wings_outstretched.jpg" class="img-thumbnail" alt="..."  >
+</p>
+
+<p>Já para os cartões foi criada uma main container-fluid para trazer o branco ocupando toda a tela com o tamanho de 5 na vertical e na horizontal p-5. Já para colocar um bloco do lado do outro criou uma linha class=row e quatro colunas class=col-4. Na prática vc vaicopiando e colando tudo dentro do class ao lado da classe card. O py-5 espaço entre os elementos na horizontal o px-5 espaço entre os elementos na vertical.  </p>
+
+<main class="container-fluid p-5">
+<div class="row">
+<div class="col-4">
+  <div class="card border-primary mb-3 py-5 px-3" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Teste 1</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <div class="card border-primary mb-3" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Teste 2</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card border-primary mb-3" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Teste 3</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+</div>
+
+</div>
+</main>
+<p>Já para adiconar um ícone é preciso importar um pacote primeiro. O caminho é Bootstrap-icons-install-Copia o link do cdn e cola no head. Em seguida, pesquisa o ícone desejado-entra nele depois coppia o i e cola.</p>
+
+  <i class="bi bi-watch"></i>
+
+<p>
+  Os modais são janelas menores que abrem tipo confirme. No geral é um bloco(div) que fica em um fundo;Para criar é só copiar e colar o modelo do site. Observe que na verdade é add ao botão vários outros atributos dentro da classe na tag button. O data-bs-dimiss="modal" dentro da classe é o que fecha o modal. O fundo que deixa tudo intocável é inserido dinamicamente através de uma div-só dá para ver no inspect.
+</p>
+
+<div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Título teste</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Conteúdo Teste
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<p>A principal classe que vai modificar a aparência é a table no caso das tabelas.Também é a adição ao lado da classe table de várias outras classes success fica verde, stripe fica alternando, hover que seleciona com o mouse...</p>
+
+<table class="table table-success table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#Número</th>
+      <th scope="col">Primeiro nome</th>
+      <th scope="col">Sobrenome</th>
+      <th scope="col">Contato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Teste n 1</td>
+      <td>Nome 1</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Teste n 2</td>
+      <td>Nome 2</td>
+      <td>@fat</td>
+    </tr>
+  
+  </tbody>
+</table>
+
+<p>O efeito carrosel é o banner que passa as imagens e informação dos produtos a venda.... Serve para fazer slide de imagem no geral. Podemos tirar o conteúdo de imagem e colocr umm texto.#Para mudar o tamaho das coisas pode usar css nesse caso(colocou banner como classe na frente de tudo e levou para css4).Cada item vem com a classe carousel-item o active determina que itme vem primeiro.</p>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class=" banner carousel-item active">
+      <img src="https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia10883/slide/galinha-japonesa-cursos-cpt.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <header class="banner bg-dark py-5 d-flex flex-column align-items-center" >
+        <div class="text-dark text-center w-50"></div>
+        <h1 class="text-white">Alterando o conteúdo de imagem para texto</h1>
+        <p class="text-white-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci natus, odit voluptas dolor ad hic harum architecto temporibus ab libero dignissimos aperiam fugit eum repudiandae dolorem sint non consequuntur! Temporibus.O header é o container criado, a div é o elemento dentro.</p>
+        <div>
+          <button class="btn btn-secondary">Começar</button>
+          <button class="btn btn-danger">Ver mais</button>
+        </div>
+        
+        </header>
+    </div>
+    <div class=" banner carousel-item">
+      <img src="https://i.ytimg.com/vi/9f0nfXVxrug/maxresdefault.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+
+<p> O bootstrap permite 3 tipos de formulário vertical,horizontal e inline. No geral,o primeiro vc agrupa em divs e ele faz o resto, o segundo vc cria row 1 coluna para label e outra para o input o terceiro é mais para butão de filtro que é muito usado em nav bar. A classe para o form é colocada ao lado do forms e tudo se dá em partes.Usa o div-classmb para dar uma distância</p>
+
+<p>O form abaixo é vertical para ficar horizontal põe as classes das divs como row e col.</p>
+<form class="modal-body">
+  <div class="mb-2">
+    <Label for="holder_name" class="form-label">Holder</Label>
+    <input name="holder_name" type="text" class="form-control">
+  </div>
+  <div class="mb-2">
+    <Label for="card_number" class="form-label">Card Number</Label>
+    <input name="card_number" type="text" class="form-control">
+  </div>
+  <div class="mb-2">
+    <Label for="expiration_date" class="form-label">Expiration Date</Label>
+    <input name="expiration_date" type="text" class="form-control">
+  </div>
+  <div class="mb-2">
+    <Label for="cvv" class="form-label">CVV</Label>
+    <input name="cvv" type="text" class="form-control">
+  </div>
+</form>
+
+<p>Form horizontal,pode diminuir ou aumentar colocando um tamanho do lado do col</p>
+<form>
+  <div class="mb-2 row">
+    <Label for="holder_name" class="form-label col-2">Holder</Label>
+    <input name="holder_name" type="text" class="form-control col">
+  </div>
+  <div class="mb-2 row">
+    <Label for="card_number" class="form-label col-8">Card Number</Label>
+    <input name="card_number" type="text" class="form-control col">
+  </div>
+  <div class="mb-2 row">
+    <Label for="expiration_date" class="form-label col-5">Expiration Date</Label>
+    <input name="expiration_date" type="text" class="form-control col">
+  </div>
+  <div class="mb-2 row">
+    <Label for="cvv" class="form-label col-3">CVV</Label>
+    <input name="cvv" type="text" class="form-control col">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<p>Existem muitos layouts prontos, assim não é necessário reinventar a roda. Algumas formas de buscar templates em sites que usam bootstrap são:jogar no google(templates usando boostrap) O start bootStrap.</p>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</html>

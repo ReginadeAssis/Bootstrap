@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    O input é uma tag de entrada que fica dentro do form que pega as informações digitalmente. O name identifica o que tem no formulário.
+    O input é um elemento vazio que pode ter diversos tipos.
+    O correto é colocar um name e um id em cada input pedido.O site ao lado do action abaixo permite que sejam feitos testes.
+    O target é para abrir em outra página.
+
+<form action="https://pruu.herokuapp.com/dump/test" method="post" target="_blank">
+    <fieldset>
+<input id="assunto" name="assunto" type="text">
+<input id="senha" name="senha" type="password">
+<input id="idade" name="idade" type="number">
+<input id="email" name="email" type="email">
+<input id="datadenascimento" name="datadenascimento" type="date">
+<input id="corfavorita" name="corfavorita" type="color">
+</fieldset>
+O fieldset agrupa os campos-faz a linha que envolve como um quadrado.
+<br><br>
+O text area é uma tag para receber textos maiores...tem alguns atributos que podem ser adicionados....
+<textarea id="mensagemqualquer" name="mensagemqualquer"></textarea>
+
+<button type="submit">Enviar</button>
+
+</form>
+<br><br> 
+Campo combo box e fieldset são input que o usuário seleciona-o fieldset particularmente determina um grupo mais restrito(poderia usar div,mas div não tem significado). As opções que serão selecionadas ficam dentro do option. 
+<br> <br> 
+Usando o select como atributoele vem com aquela opção por padrão.
+
+<form>
+
+<select name="motivo" id="motivo">
+<option value="sem_motivo">Não selecionado</option>
+<option value="porque_sim">Porque sim</option>
+<option value="elogio" selected>Aula legal</option>
+<option value="reclamação">Aula péssima</option>
+</select>
+
+</form>
+<br> <br>
+
+o label serve para ajudar o usuário a saber o que está fazendo, já o for diz internamente a que elemento aquele atributo pertence.O hidden é um input que tem essa opção para tipo.Esse "campo escondido" são informações importantes para quem quer analisar os dados, mas não para o usuário.
+
+<br> <br>
+<form action="https://pruu.herokuapp.com/dump/test" method="post" target="_blank">
+    <label for="nome">Nome<label\>
+    <input name="name" type="hidden" value="Tiago">
+    <button type="submit">Enviar</button>
+</form>
+
+Para criar um botão pode ser sem type e eles vão ter comportamento do type como padrão.Também pode usar input como buttom ,mas sem sentido por isso não é recomendado. Os botões de imagem não são mais tão utilizados.O que faz upload de arquivo chama botão de arquivo.Para addd mais de um arquivo é só colocar multiple como atributo.
+<br> <br>
+<form action="">
+
+    <select name="motivo" id="motivo">
+    <option value="sem_motivo">Não selecionado</option>
+    <option value="porque_sim">Porque sim</option>
+    <option value="elogio" selected>Aula legal</option>
+    <option value="reclamação">Aula péssima</option>
+    </select>
+    <input name="file" type="file" multiple>
+    
+    </form>
+
+O max lenght como atrivuto é para determinar o máximo de caracteres por campo. 
+    <br> <br>
+<form action="">
+    <fieldset>
+<div>
+<label for="pais"> País*</label>
+<select name="pais" id="pais">
+    <option selected value="Brasil">Brasil</option>
+</select> 
+</div>
+
+   <div>
+   <label for="cep">CEP</label>
+   <input name="cep" id="cep" type="text" maxlength="10">
+</div>
+
+    <div>
+    <label for="endereço">Endereço</label>
+    <input name="endereço" id="endereço" type="text">
+    </div>
+
+    <div>
+    <label for="numero">Número</label>
+    <input name="numero" id="numero" type="number">
+    </div>
+
+    <div>
+    <label for="complemento">Complemento</label>
+    <input name="complemento" id="complemento" type="text">
+    </div>
+
+    <div>
+    <label for="estado"> Estado</label>
+    <select name="estado" id="estado">
+    <option selected value="CE">Ceará</option>
+    </select>
+    </div>
+   
+    <div>
+    <label for="cidade">Cidade</label>
+    <select name="cidade" id="cidade">
+    <option selected value="cidade">Selecione....</option>
+    </select>
+    </div>
+
+    <div>
+    <label for="bairro">Bairro</label>
+    <input name="bairro" id="bairro" type="text">
+    </div>
+O hr que faz essa linha.
+    <hr>
+
+<button type="submit">Atualizar dados</button>
+</fieldset>
+
+O fieldset faz esses quadrados
+<fieldset>
+Dados Profissionais
+</fieldset>
+
+
+</form>
+    <br> <br>
+</body>
+</html>

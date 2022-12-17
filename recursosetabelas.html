@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- Relembrando comentário em html 
+    <input type="text"> esse text é um tributo
+    O títulos H vão de 1-6 como nível de importância para definir a estrutura de pesquisa. Para link e hiperlink é a e não link.
+     A diferença entre o span e o parágrafo é que o parágrafo quebra a linha direto, já o span permite que sejam acrescentadas uma abaixo da outra.
+   
+     Ilustração de link:<a href="endereço desejado" target="_blank">espaço clicável indicando o endereço</a> O target blank abre uma janela limpa.
+
+
+    -->
+    <p>
+
+
+        Inserção de dados:<input type="text">
+        <p> Ilustração de títulos:
+<h1>H1</h1>
+<h2>H2</h2>
+<h3>H3</h3>
+<h4>H4</h4>
+<h5>H5</h5>
+<h6>H6</h6>
+        </p>
+        <p>
+            Ilustração de link:<a href="endereço desejado" target="_blank">espaço clicável indicando o endereço</a>
+        </p>
+
+        <p>
+            Ilustração de iframe que é colocar um site dentro do outro:
+            <iframe name="localquevcescolheonome" width="400px" height="200px" ></iframe>
+
+            Para funcionar tem que ficar assim a parte do link no target:
+            <a href="endereço desejado" target="localquevcescolheonome">espaço clicável indicando o endereço</a>" type="application/atom+xml" title="Atom">
+
+        </p>
+<p>
+    Isso é um parágrafo <span class="erro">errado</span>.
+</p>
+
+<p>
+    Testando <b>negrito com b-sem valor interno só estilo</b>
+</p>
+
+<p>
+    Testando <strong>negrito com strong</strong>
+</p>
+
+<p>
+    Testando <i>itálico</i>
+</p>
+
+<p>
+    Testando <em>itálico com em que tem significado,não é só estilo.</em>
+</p>
+
+<p>
+    Testando <u>sublinhado</u>
+</p>
+
+<p>
+   Testando elevação com sup 10<sup>10.</sup>
+</p>
+
+<p>
+    Testando subacoplação com sub Log<sub>10.</sub>
+ </p>
+
+ <p class="align-left">
+    Testando Alinhamentos: Aqui vc adiciona classes e leva para css para não azer bagunça
+    <br>
+  Autem ab perferendis magnam eum odio, similique est eos quidem molestiae culpa quia laudantium.
+<br>
+<p>
+
+<p class="align-center">Similique est eos quidem molestiae culpa quia laudantium.
+</p>
+    
+<br>
+<p class="align-right">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident recusandae, nesciunt corporis culpa quia laudantium.
+</p>
+<br>
+</p>
+
+<p> Listas: Pode usar ul-sem ordem ou ol-exibida já com ordem. Usa a tag da lista no geral,mas cada linha vem com seu li.</p>
+
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+
+<br>
+
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+<br>
+
+<p>Dá para colocar listas dentro de listas:</p>
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        </ul>
+</ol>
+<br>
+Também dá para colocar dentro da lista o marcador q achar melhor usando a folha de estilo:
+<br>
+<ol class="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+<br>
+A lista de definição que dá a possibilidade de agrupar elementos dentro da lista(dl:abre a lista, dt: dá nome e dd:descreve). 
+<dl>
+    <dt>Google:</dt>
+    <dd>Navegador muito usado</dd>
+    <dd>Excelente buscador</dd>
+
+    <dt>Edge:</dt>
+    <dd>Navegador muito usado</dd>
+</dl>
+Para fazer uma tabela usa-se a tag table dentro é só dividir como uma página html com cabeça, corpo e pé. 
+Tudo que vc quiser colocar como um nome da coluna virá dentro de tr e individualmente dentro de td:-O título usa th no head.
+<br>
+Está com colspan no tfoot para ocupar 2 espaço e arrumar a apresentação.Já o rowspan atua a nível de linha.
+<table width="100%" height="500px">
+<thead align="center">
+<tr valing="top">
+<th>Id</th>
+<th>Nome</th>
+<th>Quantidade</th>
+</tr>
+</thead>
+
+<tbody align="center">
+<tr>
+<td>Id</td>
+<td>Produto 1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>Id</td>
+<td>Produto 2</td>
+<td>2</td>
+</tr>
+</tbody>
+
+<tfoot align="center">
+<tr>
+    <td colspan="2">Quantidade</td>
+    <td>2</td>
+</tr>
+</tfoot>
+</table>
+<br>
+Entre os atributos da tabela estão tamaho e largura da tabela,mas em geral melhor não mudar. O celspacing espaça as células o cellpading espaça as bordas. O align alinha horizontal o texto e o valing alinha na vertical.
+#O tr é tudo que é para ficar na mesma linha...em sequência.
+
+O border adiciona a linha mais grossa na tabela...pode ser grossa fina,listada,contínua,colorida...Tem a sombra usando bordercolordark e bordercolorlight.O bg color define a cor de fundo, já o background define a imagem de fundo ou gradiente de cor(não só uma cor).
+
+O sumary fala sobre qual o assunto da tabela-um resumo do título.
+
+O abbr vc usa dentro do dd como um detalhe.
+
+<table width="100%" height="500px">
+    <thead align="center">
+        <tr>
+        <th>Matrícula</th>
+        <th>Nome</th>
+        <th>Jan/2022-1</th>
+        <th>Jan/2022-2</th>
+        <th>Jan/2022-3</th>
+        <th>Jan/2022-4</th>
+        <th>Jan/2022-5</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+        <tr>
+           <td>1</td>
+           <td>Tiago C. Resende</td>
+           <td>F</td>
+           <td>.</td>
+           <td>.</td>
+           <td>F</td>
+           <td>.</td>
+           
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Marcelo E.</td>
+            <td>.</td>
+            <td>.</td>
+            <td>.</td>
+            <td>.</td>
+            <td>.</td>
+            
+         </tr>
+
+
+    </tbody>
+
+    <tfoot></tfoot>
+</table>
+
+O site tabeless foi criado para dimminuir o uso de tabelas. Entretanto, ainda são muito usadas tabelas para construção de e-mails já que apareçam na web,mas não são navegadores os e-mails são chatinhos.
+
+
+
+
+
+</p>
+</body>
+</html>

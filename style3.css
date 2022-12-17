@@ -1,0 +1,43 @@
+.texto1{
+    text-align: center;
+    text-decoration: line-through;
+    letter-spacing: 10px;
+    text-shadow: 10px 10px 1px blue;
+    font-size: large;
+    font-family: Geneva,Cursive, sans-serif;
+    font-weight: 900;
+    font-style: oblique;
+    font-variant: small-caps;
+    line-height: 200px;
+}
+
+.navbar{
+background-color: aqua;
+display: flex;
+justify-content: space-between;
+}
+
+.menu_button{
+background-color: brown;
+}
+
+.search_button{
+background-color: blue;
+}
+
+.logo{
+    background-color: blueviolet;
+
+}
+
+.app{
+    background-color: cadetblue;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+}
+
+.content{
+    background-color: tomato;
+    flex-grow:0.9;
+}

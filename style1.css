@@ -1,0 +1,24 @@
+.erro{
+    color:red;
+    font: size 5px;
+}
+
+p{
+    font-size:10px;
+}
+
+.align-left {
+text-align: left;
+}
+
+.align-center {
+text-align:center;
+}
+
+.align-right {
+text-align: right;
+}
+
+.list{
+    list-style: square;
+}
